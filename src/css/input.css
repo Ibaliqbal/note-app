@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #1f2937;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+header {
+  box-shadow: 0 5px 10px 7px rgba(0, 0, 0, 0.9);
+}
+
+.notes-container {
+  @apply w-full grid place-items-center gap-[20px] px-4 py-[1.4rem];
+}
+
+.notes-list {
+  @apply w-[90%] max-w-[90%] h-[8.5rem] bg-gray-900 text-slate-50 px-[.75rem] py-[.5rem] rounded-[5px] relative;
+}
+
+.btnAdd {
+  @apply w-[50px] h-[50px] text-[2rem] bg-slate-50 grid place-items-center rounded-full fixed bottom-[1.5rem] left-[50%] translate-x-[-50%] z-[9999];
+}
+
+.notes-list .sampah {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  height: auto;
+  color: white;
+  display: flex;
+  margin-right: 7px;
+  column-gap: 0.75rem;
+}
+
+.navigation {
+  @apply text-4xl bg-gray-800 px-4 py-6 flex justify-around lg:justify-evenly items-center h-[130px];
+  box-shadow: 0 5px 10px 7px rgba(0, 0, 0, 0.9);
+}
+
+.isi-note {
+  @apply overflow-hidden whitespace-nowrap text-ellipsis mt-2;
+}
+
+.judul {
+  @apply text-2xl mb-2;
+}
+
+.date {
+  @apply absolute bottom-2 text-slate-50 right-2;
+}
+
+.sampah .fa-trash-can {
+  @apply text-red-400;
+}
+
+.notes-conatianer {
+  @apply w-full flex justify-center gap-y-[10px] items-center flex-col px-4;
+}

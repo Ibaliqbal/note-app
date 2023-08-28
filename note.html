@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/ouput.css" />
+    <script
+      src="https://kit.fontawesome.com/4a77f568be.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Note App</title>
+  </head>
+  <body>
+    <!-- Container to show Note -->
+    <section id="homePage" class="w-full">
+      <header
+        class="text-slate-50 bg-gray-800 items-center text-2xl px-4 py-6 flex justify-around h-[130]"
+      >
+        <div>
+          <h2>Note App</h2>
+        </div>
+        <div id="sosial" class="grid grid-flow-col gap-4 text-3xl">
+          <a href="https://github.com/Ibaliqbal"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/iqbal-muthahhary-muthahhary-5120b6278"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://instagram.com/muthahhary_iqbal?igshid=MzNlNGNkZWQ4Mg=="
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+      </header>
+      <div class="w-full mt-8">
+        <div class="btnAdd">+</div>
+        <div class="notes-container"></div>
+      </div>
+    </section>
+
+    <!-- Container to Note  -->
+    <section class="container-dua w-full text-slate-50 hidden">
+      <form action="" method="get" accept-charset="utf-8">
+        <header class="navigation">
+          <div class="text-center">
+            <button
+              class="bg-gray-800 text-slate-50 border-0 flex felx-col backToMenu"
+            >
+              <i class="fa-solid fa-arrow-left text-4xl" id="back"></i>
+            </button>
+            <span class="text-xs">Back</span>
+          </div>
+          <h2 id="top" class="text-2xl">Note App</h2>
+          <div class="text-center">
+            <button
+              class="bg-gray-800 text-slate-50 border-0 flex felx-col save"
+            >
+              <i class="fa-solid fa-check" id="save"></i>
+            </button>
+            <span id="spanSave" class="text-xs">Save</span>
+          </div>
+        </header>
+        <div class="mt-8 px-4 py-4">
+          <input
+            type="text"
+            name=""
+            class="w-full h-12 text-2xl bg-gray-800 border-0 text-slate-50 focus:outline-none"
+            id="titleNote"
+            value=""
+            placeholder="Judul"
+          />
+          <div class="mt-2">
+            <p id="time" class="inline-block">14 AUGUST |</p>
+            <p class="inline-block"><span id="char"> 0 </span> Character</p>
+          </div>
+        </div>
+        <div class="px-4 py-4">
+          <textarea
+            name=""
+            class="w-full border-0 text-slate-50 text-[.9rem] bg-gray-800 focus:outline-none"
+            placeholder="Masukkan kalimat/kata"
+            id="areaNote"
+          ></textarea>
+        </div>
+      </form>
+    </section>
+
+    <!-- My Script -->
+    <script src="public/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
